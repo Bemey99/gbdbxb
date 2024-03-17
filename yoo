@@ -1,0 +1,11 @@
+game:GetService("RunService").heartbeat:Connect(function ()
+  for _, v in next, game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):GetPlayingAnimationTracks() do
+     if (v.Animation.AnimationId:match("rbxassetid://2841738899")) then
+      v:Stop();
+   elseif (v.Animation.AnimationId:match("rbxassetid://2968344043")) then
+      v:Stop();
+   elseif (v.Animation.AnimationId:match("rbxassetid://2838893290")) then
+      v:Stop();
+     end
+   end
+end)
